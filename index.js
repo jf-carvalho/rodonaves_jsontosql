@@ -12,7 +12,7 @@ fs.readFile('./tabela.json', function read(err, data) {
 function processFile(content) {
     const json = JSON.parse(content);
 
-    let output = "INSER INTO oc_setting (store_id, code, key, value, serialized) VALUES";
+    let output = "INSERT INTO oc_setting (store_id, code, key, value, serialized) VALUES";
     var aux = {};
 
     const code = 'shipping_frete_customizado';
