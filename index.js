@@ -36,7 +36,7 @@ function processFile(content) {
     			aux.tempo_estimado = ""+element['Lead Time']+"";
     		}
 
-    		value = JSON.stringify(aux);
+    		value = '[' + JSON.stringify(aux) + ']';
 
             if(value !== old_value){
                 output += `\n (0, '${code}', '${key}', '${value}', 1),`
