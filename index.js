@@ -28,7 +28,7 @@ const processFile = (content) => {
 
     console.log('Starting writing SQL file...');
 
-    output += output.slice(0, -1) + ';';
+    output = output.slice(0, -1) + ';';
 
     fs.writeFile('fretes.sql', output, (err) => {
       if (err) return console.error('\x1b[31m%s\x1b[0m',err);
