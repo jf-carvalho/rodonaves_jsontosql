@@ -13,7 +13,7 @@ const processFile = (content) => {
     const json = JSON.parse(content)[0];
     var count = 0;
 
-    let output = `INSERT INTO oc_faixas_rodonaves (cidade, valor, cep_inicial, cep_final, peso_minimo, peso_maximo, tempo_estimado) VALUES`;
+    let output = `INSERT INTO oc_faixas_rodonaves (title, total, start_zipcode, end_zipcode, peso_minimo, peso_maximo, tempo_estimado) VALUES`;
 
     console.log("Starting JSON iteration...");
 
