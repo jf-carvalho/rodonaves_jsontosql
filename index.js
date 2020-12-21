@@ -26,7 +26,7 @@ const processFile = (content) => {
 
     console.log("Finished JSON iteration.");
 
-    console.log('Starting writing SQL file...');
+    console.log('Start writing SQL file...');
 
     output = output.slice(0, -1) + ';';
 
